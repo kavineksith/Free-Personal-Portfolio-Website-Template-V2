@@ -1,0 +1,124 @@
+/* ================ Header & Navigation ================ */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-lg);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+.navbar .logo-text {
+  color: var(--primary-color);
+  font-family: var(--font-mono);
+}
+.navbar .nav-links {
+  display: flex;
+}
+.navbar .nav-links .nav-link {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-links .nav-link i {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+.navbar .nav-links .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+}
+.navbar .nav-links .nav-link:hover::after, .navbar .nav-links .nav-link.active::after {
+  width: 100%;
+}
+.navbar .nav-links .nav-link.active {
+  color: var(--primary-color);
+}
+.navbar .social-links {
+  display: flex;
+  margin-left: 2rem;
+}
+.navbar .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  margin-left: 0.75rem;
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+.navbar .social-links a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+.navbar .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+.navbar .menu-toggle .hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--dark-color);
+  position: relative;
+  transition: var(--transition);
+}
+.navbar .menu-toggle .hamburger::before, .navbar .menu-toggle .hamburger::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--dark-color);
+  transition: var(--transition);
+}
+.navbar .menu-toggle .hamburger::before {
+  top: -8px;
+}
+.navbar .menu-toggle .hamburger::after {
+  top: 8px;
+}
+.navbar .menu-toggle.active .hamburger {
+  background-color: transparent;
+}
+.navbar .menu-toggle.active .hamburger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.navbar .menu-toggle.active .hamburger::after {
+  top: 0;
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=navBar.css.map */

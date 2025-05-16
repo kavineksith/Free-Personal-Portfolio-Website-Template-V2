@@ -1,0 +1,114 @@
+
+
+/* ================ About Section ================ */
+.about {
+  background-color: white;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &-image {
+    flex: 1;
+    position: relative;
+
+    img {
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-xl);
+      transition: var(--transition);
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 5px solid var(--primary-color);
+      border-radius: var(--border-radius-lg);
+      top: 20px;
+      left: 20px;
+      z-index: -1;
+    }
+  }
+
+  &-text {
+    flex: 1;
+
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    .detail-item {
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 1.25rem;
+        color: var(--primary-color);
+        margin-right: 1rem;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(108, 99, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h4 {
+        font-size: 0.875rem;
+        color: var(--gray-color);
+        margin-bottom: 0.25rem;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    .stat-item {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--light-color);
+      border-radius: var(--border-radius);
+      flex: 1;
+
+      .stat-number {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 0.25rem;
+      }
+
+      .stat-text {
+        font-size: 0.875rem;
+        color: var(--dark-gray);
+      }
+    }
+  }
+}

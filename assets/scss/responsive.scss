@@ -1,0 +1,136 @@
+
+
+/* ================ Responsive Styles ================ */
+@media (max-width: 992px) {
+  html {
+      font-size: 15px;
+  }
+
+  .hero {
+      &-content {
+          padding-right: 0;
+      }
+
+      &-image {
+          display: none;
+      }
+  }
+
+  .about {
+      &-content {
+          flex-direction: column;
+      }
+
+      &-image {
+          margin-bottom: 2rem;
+          max-width: 400px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+      font-size: 14px;
+  }
+
+  .navbar {
+      .nav-links {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 80%;
+          max-width: 400px;
+          height: 100vh;
+          background-color: white;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+          transition: var(--transition);
+          z-index: 1000;
+
+          &.active {
+              right: 0;
+          }
+
+          .nav-link {
+              margin: 1rem 0;
+              font-size: 1.25rem;
+          }
+      }
+
+      .social-links {
+          display: none;
+      }
+
+      .menu-toggle {
+          display: block;
+      }
+  }
+
+  .hero {
+      &-title {
+          font-size: 2.5rem !important;
+      }
+
+      &-subtitle {
+          font-size: 1.25rem !important;
+      }
+
+      &-cta {
+          flex-direction: column;
+
+          .btn {
+              width: 100%;
+          }
+      }
+
+      &-content {
+          padding-right: 0;
+          text-align: center;
+      }
+
+      &-image {
+          img {
+              max-width: 80%;
+              opacity: 0.8; // More transparent on mobile
+          }
+      }
+  }
+
+  .about {
+      &-details {
+          grid-template-columns: 1fr;
+      }
+
+      &-stats {
+          flex-direction: column;
+      }
+  }
+
+  .projects {
+      &-grid {
+          grid-template-columns: 1fr;
+      }
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+      padding: 3rem 0;
+  }
+
+  .hero {
+      &-title {
+          font-size: 2rem !important;
+      }
+  }
+
+  .contact {
+      &-container {
+          grid-template-columns: 1fr;
+      }
+  }
+}
