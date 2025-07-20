@@ -4,18 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Standard Favicon (ICO) -->
   <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
-  <!-- Modern Browsers (PNG) -->
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-  <!-- Apple Touch Icon (iOS) -->
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-  <!-- Android/Chrome -->
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
-  <!-- Theme Color (Optional) -->
   <meta name="theme-color" content="#ffffff">
-  <!-- Primary Meta Tags -->
   <meta name="description" content="Professional Portfolio of [Your Name] - Software Developer">
   <meta name="keywords" content="Portfolio, Professional, Software Developer, CV, web development">
   <meta name="author" content="Your Name">
@@ -24,49 +18,35 @@
   <meta name="language" content="English">
   <meta name="rating" content="general">
   <meta name="distribution" content="global">
-  <!-- Chrome / Android Meta Tags -->
   <meta name="theme-color" content="#ffffff">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="HandheldFriendly" content="True">
-  <!-- Cache Control Meta Tags -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <!-- Refresh / Redirect Meta Tags -->
   <meta http-equiv="refresh" content="300">
   <meta http-equiv="Page-Enter" content="revealtrans(Duration=2.0,Transition=2)">
   <meta http-equiv="Page-Exit" content="revealtrans(Duration=2.0,Transition=2)">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
     rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/navBar.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/hero.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/aboutMe.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/skillsShowCase.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/projectShowCase.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/contactForm.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/utility.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <title>[Your Name] | Portfolio</title>
 </head>
 <body>
-  <!-- Navigation -->
   <header class="header">
     <div class="container">
       <nav class="navbar">
         <a href="./index.html" class="logo">
-          <span class="logo-text">&lt;YourName/&gt;</span>
+          <img src="./assets/img/logo.png" alt="Logo" class="logo-img" />
         </a>
 
         <button class="menu-toggle" aria-label="Toggle navigation">
-          <span class="hamburger"></span>
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
         </button>
 
         <ul class="nav-links">
@@ -75,9 +55,17 @@
           <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
           <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
           <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li class="social-links-mobile">
+              <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i
+                      class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i
+                      class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i
+                      class="fab fa-twitter"></i></a>
+          </li>
         </ul>
 
-        <div class="social-links">
+        <div class="social-links-desktop">
           <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i
               class="fab fa-github"></i></a>
           <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i
@@ -89,7 +77,6 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container">
       <div class="hero-content">
@@ -110,7 +97,6 @@
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="section about">
     <div class="container">
       <h2 class="section-title">About <span class="highlight">Me</span></h2>
@@ -175,7 +161,6 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills" class="section skills">
     <div class="container">
       <h2 class="section-title">My <span class="highlight">Skills</span></h2>
@@ -349,7 +334,6 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects" class="section projects">
     <div class="container">
       <h2 class="section-title">My <span class="highlight">Projects</span></h2>
@@ -363,7 +347,6 @@
       </div>
 
       <div class="projects-grid">
-        <!-- Project 1 -->
         <div class="project-card" data-category="fullstack">
           <div class="project-image">
             <img
@@ -387,7 +370,6 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
         <div class="project-card" data-category="frontend">
           <div class="project-image">
             <img
@@ -409,7 +391,6 @@
           </div>
         </div>
 
-        <!-- Project 3 -->
         <div class="project-card" data-category="backend">
           <div class="project-image">
             <img
@@ -432,7 +413,6 @@
           </div>
         </div>
 
-        <!-- Project 4 -->
         <div class="project-card" data-category="fullstack">
           <div class="project-image">
             <img
@@ -455,7 +435,6 @@
           </div>
         </div>
 
-        <!-- Project 5 -->
         <div class="project-card" data-category="frontend">
           <div class="project-image">
             <img src="./assets/img/undraw_season-change_ohe6.png"
@@ -476,7 +455,6 @@
           </div>
         </div>
 
-        <!-- Project 6 -->
         <div class="project-card" data-category="backend">
           <div class="project-image">
             <img
@@ -506,7 +484,6 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="section contact">
     <div class="container">
       <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
@@ -549,34 +526,26 @@
           </div>
         </div>
 
-        <!-- Netlify Form -->
         <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-          <!-- Hidden honeypot field - properly hidden -->
           <div class="hidden-field">
             <label class="visually-hidden">Don't fill this out if you're human:
               <input name="bot-field">
             </label>
           </div>
 
-          <!-- Invisisible form fields -->
-
           <div class="form-alerts">
-            <!-- Success alert (hidden by default) -->
             <div class="alert alert-success">
               <i class="fas fa-check-circle"></i>
               <span class="alert-message">Message sent successfully!</span>
               <button class="alert-close">&times;</button>
             </div>
 
-            <!-- Error alert (hidden by default) -->
             <div class="alert alert-error">
               <i class="fas fa-exclamation-circle"></i>
               <span class="alert-message">Failed to send message. Please try again.</span>
               <button class="alert-close">&times;</button>
             </div>
           </div>
-
-          <!-- Visible form fields -->
 
           <div class="form-group">
             <input type="text" name="name" id="name" required>
@@ -610,7 +579,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -661,18 +629,10 @@
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
   <a href="#" class="back-to-top" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
   </a>
 
-  <!-- JavaScript -->
   <script type="text/javascript" src="./assets/js/main.js"></script>
-  <script type="text/javascript" src="./assets/js/navBar.js"></script>
-  <script type="text/javascript" src="./assets/js/projectsFilter.js"></script>
-  <script type="text/javascript" src="./assets/js/formSubmit.js"></script>
-  <script type="text/javascript" src="./assets/js/backgroundMusic.js"></script>
-  <script type="text/javascript" src="./assets/js/pageRefesher.js"></script>
-  <script type="text/javascript" src="./assets/js/footer.js"></script>
 </body>
 </html>
