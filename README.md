@@ -15,10 +15,10 @@ Ideal for developers, designers, and creatives who want a simple starting point 
 # **Important Notices**
 
 ## 🎵 Background Music & Images
-- To add background music, place your audio file in the `assets/audio` folder and update the link in `backgroundMusic.js`
-- You may also use direct URLs to audio files in `backgroundMusic.js`
-- **Only use copyright-free music tracks** to avoid legal issues
-- Similarly, ensure all images used are properly licensed or copyright-free
+* Create an `audio` folder inside the `assets` directory, place your audio file in it, and link the track in `main.js` using `bgMusic.src = '';`
+* You may also use direct URLs to audio files in `main.js`
+* **Only use copyright-free music tracks** to avoid legal issues
+* Similarly, ensure all images used are properly licensed or copyright-free
 
 ## 📝 Contact Form Setup
 - The contact form is pre-configured for Netlify hosting
